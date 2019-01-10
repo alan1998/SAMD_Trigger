@@ -1,0 +1,3 @@
+[submodule "KiLibs"]
+	path = KiLibs
+	url = https://github.com/alan1998/KiLibs.git
