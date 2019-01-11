@@ -15,17 +15,6 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Trigger-rescue:SAMD21E-MyComponents U2
-U 1 1 5C325D69
-P 4650 3400
-F 0 "U2" H 4650 2014 50  0000 C CNN
-F 1 "SAMD21E" H 4650 1923 50  0000 C CNN
-F 2 "" H 4500 4400 50  0001 C CNN
-F 3 "" H 4500 4400 50  0001 C CNN
-	1    4650 3400
-	1    0    0    -1  
-$EndComp
-$Comp
 L Trigger-rescue:UE27AC54100-dk_USB-DVI-HDMI-Connectors J1
 U 1 1 5C3264C2
 P 950 3600
@@ -45,9 +34,9 @@ F 12 "Active" H 1150 4800 60  0001 L CNN "Status"
 	1    950  3600
 	1    0    0    -1  
 $EndComp
-Text Label 5750 3550 0    50   ~ 0
+Text Label 5450 3850 0    50   ~ 0
 DM
-Text Label 5750 3650 0    50   ~ 0
+Text Label 5450 3950 0    50   ~ 0
 DP
 $Comp
 L Trigger-rescue:GND-power #PWR01
@@ -61,8 +50,6 @@ F 3 "" H 1250 4750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text Label 1250 4750 0    50   ~ 0
-GND
-Text Label 4200 2350 0    50   ~ 0
 GND
 $Comp
 L MyComponents:MCP6002 U1
@@ -134,27 +121,12 @@ Text Label 1500 1800 0    50   ~ 0
 GND
 Text Label 1400 1400 0    50   ~ 0
 3V3
-Wire Wire Line
-	4100 2350 4000 2350
-Wire Wire Line
-	4000 2200 4000 2350
-Connection ~ 4000 2350
-Text Label 4000 2200 0    50   ~ 0
-3V3
-Wire Wire Line
-	4400 4700 4400 4750
-Text Label 4400 4750 0    50   ~ 0
-GND
-Wire Wire Line
-	4300 4700 4300 4750
-Text Label 4300 4750 2    50   ~ 0
-3V3
 $Comp
 L Device:C_Small C1
 U 1 1 5C37CBD9
 P 1200 4500
-F 0 "C1" H 1292 4546 50  0000 L CNN
-F 1 "C_Small" H 1292 4455 50  0000 L CNN
+F 0 "C1" H 1292 4546 50  0000 R CNN
+F 1 "1u" H 1292 4455 50  0000 L CNN
 F 2 "" H 1200 4500 50  0001 C CNN
 F 3 "~" H 1200 4500 50  0001 C CNN
 	1    1200 4500
@@ -165,7 +137,7 @@ L Device:C_Small C2
 U 1 1 5C37CC39
 P 1600 4500
 F 0 "C2" H 1692 4546 50  0000 L CNN
-F 1 "C_Small" H 1692 4455 50  0000 L CNN
+F 1 "1u" H 1692 4455 50  0000 L CNN
 F 2 "" H 1600 4500 50  0001 C CNN
 F 3 "~" H 1600 4500 50  0001 C CNN
 	1    1600 4500
@@ -192,4 +164,42 @@ Text Label 4300 5800 0    59   ~ 0
 5V
 Text Label 2400 5800 0    59   ~ 0
 5V
+$Comp
+L MyComponents:SAMD21E U?
+U 1 1 5C3920CB
+P 4300 3700
+F 0 "U?" H 4300 2314 50  0000 C CNN
+F 1 "SAMD21E" H 4300 2223 50  0000 C CNN
+F 2 "" H 4150 4700 50  0001 C CNN
+F 3 "" H 4150 4700 50  0001 C CNN
+	1    4300 3700
+	1    0    0    -1  
+$EndComp
+Text Label 4050 5000 0    50   ~ 0
+GND
+Text Label 3950 5000 2    50   ~ 0
+3V3
+Text Label 3850 2650 0    50   ~ 0
+GND
+Text Label 3650 2650 2    50   ~ 0
+3V3
+$Comp
+L Device:C C?
+U 1 1 5C3921F2
+P 4450 2450
+F 0 "C?" H 4565 2496 50  0000 L CNN
+F 1 "1u" H 4565 2405 50  0000 L CNN
+F 2 "" H 4488 2300 50  0001 C CNN
+F 3 "~" H 4450 2450 50  0001 C CNN
+	1    4450 2450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4450 2650 4450 2600
+Text Label 4450 2300 2    50   ~ 0
+GND
+Wire Wire Line
+	5400 3850 5450 3850
+Wire Wire Line
+	5400 3950 5450 3950
 $EndSCHEMATC

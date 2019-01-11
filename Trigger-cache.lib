@@ -1,6 +1,24 @@
 EESchema-LIBRARY Version 2.4
 #encoding utf-8
 #
+# Device_C
+#
+DEF Device_C C 0 10 N Y 1 F N
+F0 "C" 25 100 50 H V L CNN
+F1 "Device_C" 25 -100 50 H V L CNN
+F2 "" 38 -150 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ C_*
+$ENDFPLIST
+DRAW
+P 2 0 1 20 -80 -30 80 -30 N
+P 2 0 1 20 -80 30 80 30 N
+X ~ 1 0 150 110 D 50 50 1 1 P
+X ~ 2 0 -150 110 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
 # Device_C_Small
 #
 DEF Device_C_Small C 0 10 N N 1 F N
@@ -62,24 +80,11 @@ X V+ 8 -100 400 250 D 40 40 2 1 W
 ENDDRAW
 ENDDEF
 #
-# Trigger-rescue_GND-power
+# MyComponents_SAMD21E
 #
-DEF Trigger-rescue_GND-power #PWR 0 0 Y Y 1 F P
-F0 "#PWR" 0 -250 50 H I C CNN
-F1 "Trigger-rescue_GND-power" 0 -150 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-DRAW
-P 6 0 1 0 0 0 0 -50 50 -50 0 -100 -50 -50 0 -50 N
-X GND 1 0 0 0 D 50 50 1 1 W N
-ENDDRAW
-ENDDEF
-#
-# Trigger-rescue_SAMD21E-MyComponents
-#
-DEF Trigger-rescue_SAMD21E-MyComponents U 0 40 Y Y 1 F N
+DEF MyComponents_SAMD21E U 0 40 Y Y 1 F N
 F0 "U" -150 1000 50 H V C CNN
-F1 "Trigger-rescue_SAMD21E-MyComponents" 0 -250 50 H V C CNN
+F1 "MyComponents_SAMD21E" 0 -250 50 H V C CNN
 F2 "" -150 1000 50 H I C CNN
 F3 "" -150 1000 50 H I C CNN
 DRAW
@@ -102,9 +107,10 @@ X PA23 22 1100 -50 200 L 50 50 1 1 B
 X PA24 23 1100 -150 200 L 50 50 1 1 B
 X PA25 24 1100 -250 200 L 50 50 1 1 B
 X PA27 25 1100 -350 200 L 50 50 1 1 B
+X Reset 26 300 1050 200 D 50 50 1 1 I
 X PA28 27 1100 -450 200 L 50 50 1 1 B
 X Gnd 28 -450 1050 200 D 50 50 1 1 W
-X VDDcore 29 -550 1050 200 D 50 50 1 1 W
+X VDDcore 29 150 1050 200 D 50 50 1 1 w
 X PA02 3 -1100 250 200 R 50 50 1 1 B
 X VDDIN 30 -650 1050 200 D 50 50 1 1 W
 X PA30 31 1100 -550 200 L 50 50 1 1 B
@@ -115,6 +121,19 @@ X PA05 6 -1100 -50 200 R 50 50 1 1 B
 X PA06 7 -1100 -150 200 R 50 50 1 1 B
 X PA07 8 -1100 -250 200 R 50 50 1 1 B
 X VDDANA 9 -350 -1300 200 U 50 50 1 1 W
+ENDDRAW
+ENDDEF
+#
+# Trigger-rescue_GND-power
+#
+DEF Trigger-rescue_GND-power #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -250 50 H I C CNN
+F1 "Trigger-rescue_GND-power" 0 -150 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 6 0 1 0 0 0 0 -50 50 -50 0 -100 -50 -50 0 -50 N
+X GND 1 0 0 0 D 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
