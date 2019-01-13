@@ -70,34 +70,6 @@ Connection ~ 3500 6600
 Text Label 4300 6600 0    50   ~ 0
 GND
 $Comp
-L Trigger-rescue:ARM_SWD-MyComponents J2
-U 1 1 5C37BEB5
-P 1100 1750
-F 0 "J2" H 956 2358 60  0000 C CNN
-F 1 "ARM_SWD" H 956 2252 60  0000 C CNN
-F 2 "" H 1100 1750 60  0000 C CNN
-F 3 "" H 1100 1750 60  0000 C CNN
-	1    1100 1750
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1300 1400 1400 1400
-Wire Wire Line
-	1500 1600 1500 1800
-Wire Wire Line
-	1300 1800 1500 1800
-Wire Wire Line
-	1300 1600 1500 1600
-Wire Wire Line
-	1500 1800 1500 2000
-Wire Wire Line
-	1300 2000 1500 2000
-Connection ~ 1500 1800
-Text Label 1500 1800 0    50   ~ 0
-GND
-Text Label 1400 1400 0    50   ~ 0
-3V3
-$Comp
 L Device:C_Small C1
 U 1 1 5C37CBD9
 P 9850 2650
@@ -137,9 +109,9 @@ Text Label 9850 2500 2    50   ~ 0
 Text Notes 10450 2450 2    59   ~ 0
 Close to IC
 Text Label 4300 5800 0    59   ~ 0
-5V
+3V3
 Text Label 2400 5800 0    59   ~ 0
-5V
+3V3
 Text Label 4050 5000 0    50   ~ 0
 GND
 Text Label 3950 5000 2    50   ~ 0
@@ -505,51 +477,121 @@ Wire Wire Line
 Wire Wire Line
 	3900 5550 3900 6100
 Connection ~ 3900 6100
-$Comp
-L Connector:TestPoint SWDIO
-U 1 1 5C3CB332
-P 5700 4550
-F 0 "SWDIO" H 5642 4577 50  0000 R CNN
-F 1 "TestPoint" H 5642 4668 50  0000 R CNN
-F 2 "" H 5900 4550 50  0001 C CNN
-F 3 "~" H 5900 4550 50  0001 C CNN
-	1    5700 4550
-	-1   0    0    1   
-$EndComp
-$Comp
-L Connector:TestPoint SWCLK
-U 1 1 5C3CB414
-P 6200 4550
-F 0 "SWCLK" H 6142 4577 50  0000 R CNN
-F 1 "TestPoint" H 6142 4668 50  0000 R CNN
-F 2 "" H 6400 4550 50  0001 C CNN
-F 3 "~" H 6400 4550 50  0001 C CNN
-	1    6200 4550
-	-1   0    0    1   
-$EndComp
-$Comp
-L Connector:TestPoint ResetN
-U 1 1 5C3CB500
-P 6650 4550
-F 0 "ResetN" H 6592 4577 50  0000 R CNN
-F 1 "TestPoint" H 6592 4668 50  0000 R CNN
-F 2 "" H 6850 4550 50  0001 C CNN
-F 3 "~" H 6850 4550 50  0001 C CNN
-	1    6650 4550
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	5400 4350 5700 4350
-Wire Wire Line
-	5700 4350 5700 4550
-Wire Wire Line
-	5400 4250 6200 4250
-Wire Wire Line
-	6200 4250 6200 4550
 Text Label 5200 2650 0    50   ~ 0
 RstN
-Text Label 6650 4450 0    50   ~ 0
-RstN
+$Comp
+L MyComponents:MountHole H?
+U 1 1 5C3B6A60
+P 650 7700
+F 0 "H?" H 790 7953 60  0000 L CNN
+F 1 "MountHole" H 790 7847 60  0000 L CNN
+F 2 "" H 650 7700 60  0001 C CNN
+F 3 "" H 650 7700 60  0001 C CNN
+	1    650  7700
+	1    0    0    -1  
+$EndComp
+$Comp
+L MyComponents:MountHole H?
+U 1 1 5C3B6B94
+P 1000 7700
+F 0 "H?" H 1140 7953 60  0000 L CNN
+F 1 "MountHole" H 1140 7847 60  0000 L CNN
+F 2 "" H 1000 7700 60  0001 C CNN
+F 3 "" H 1000 7700 60  0001 C CNN
+	1    1000 7700
+	1    0    0    -1  
+$EndComp
+$Comp
+L MyComponents:MountHole H?
+U 1 1 5C3B6C1C
+P 1350 7700
+F 0 "H?" H 1490 7953 60  0000 L CNN
+F 1 "MountHole" H 1490 7847 60  0000 L CNN
+F 2 "" H 1350 7700 60  0001 C CNN
+F 3 "" H 1350 7700 60  0001 C CNN
+	1    1350 7700
+	1    0    0    -1  
+$EndComp
+$Comp
+L MyComponents:MountHole H?
+U 1 1 5C3B6C9A
+P 1700 7700
+F 0 "H?" H 1840 7953 60  0000 L CNN
+F 1 "MountHole" H 1840 7847 60  0000 L CNN
+F 2 "" H 1700 7700 60  0001 C CNN
+F 3 "" H 1700 7700 60  0001 C CNN
+	1    1700 7700
+	1    0    0    -1  
+$EndComp
+$Comp
+L MyComponents:SWD_Pogo U?
+U 1 1 5C3BB35C
+P 2050 1750
+F 0 "U?" H 1896 2175 50  0000 C CNN
+F 1 "SWD_Pogo" H 1896 2084 50  0000 C CNN
+F 2 "" H 2300 1400 50  0001 C CNN
+F 3 "" H 2300 1400 50  0001 C CNN
+	1    2050 1750
+	1    0    0    -1  
+$EndComp
 Wire Wire Line
-	6650 4450 6650 4550
+	2050 1550 2200 1550
+Text Label 2200 1550 0    50   ~ 0
+GND
+Wire Wire Line
+	2050 1750 2200 1750
+Wire Wire Line
+	2050 1650 2200 1650
+Wire Wire Line
+	2050 1850 2200 1850
+Wire Wire Line
+	2050 1950 2200 1950
+Text Label 2200 1950 0    50   ~ 0
+RstN
+Text Label 2200 1850 0    50   ~ 0
+SWCLK
+Text Label 2200 1750 0    50   ~ 0
+3V3
+Text Label 2200 1650 0    50   ~ 0
+SWDIO
+Text Label 5400 4350 0    50   ~ 0
+SWDIO
+Text Label 5400 4250 0    50   ~ 0
+SWCLK
+Text Label 7800 3650 0    50   ~ 0
+GND
+Text Label 7800 4150 0    50   ~ 0
+5V
+Text Label 7800 4050 0    50   ~ 0
+3V3
+Text Label 7800 3750 0    50   ~ 0
+SW_FET
+Text Label 7800 3850 0    50   ~ 0
+Flash
+Text Label 7800 3950 0    50   ~ 0
+Trig
+$Comp
+L Connector:Screw_Terminal_01x06 J?
+U 1 1 5C3CC01B
+P 7600 3950
+F 0 "J?" H 7520 3425 50  0000 C CNN
+F 1 "Screw_Terminal_01x06" H 7520 3516 50  0000 C CNN
+F 2 "" H 7600 3950 50  0001 C CNN
+F 3 "~" H 7600 3950 50  0001 C CNN
+	1    7600 3950
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector:Conn_01x04_Female J?
+U 1 1 5C3D094F
+P 7600 4550
+F 0 "J?" H 7628 4526 50  0000 L CNN
+F 1 "Conn_01x04_IO" H 7628 4435 50  0000 L CNN
+F 2 "" H 7600 4550 50  0001 C CNN
+F 3 "~" H 7600 4550 50  0001 C CNN
+	1    7600 4550
+	1    0    0    -1  
+$EndComp
+Text Label 7400 4450 2    50   ~ 0
+GND
 $EndSCHEMATC
