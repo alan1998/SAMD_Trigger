@@ -504,9 +504,9 @@ Text Label 8150 3500 0    50   ~ 0
 3V3
 Text Label 8150 3200 0    50   ~ 0
 SW_FET
-Text Label 8150 3300 0    50   ~ 0
-Flash
 Text Label 8150 3400 0    50   ~ 0
+Flash
+Text Label 8150 3300 0    50   ~ 0
 Shutter
 $Comp
 L Connector:Screw_Terminal_01x06 J4
